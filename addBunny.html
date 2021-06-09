@@ -57,54 +57,115 @@
     <form>
       <div class="row">
         <div class="six columns">
-          <label for="genderInput">
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-          </label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            <label for="name">My name is: </label>
+            <input class="u-full-width" type="email" placeholder="Bunny" id="name">
         </div>
         <div class="six columns">
-          <label for="exampleRecipientInput">I am a </label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Boy</option>
-            <option value="Option 2">Girl</option>
+            <label for="age">My age is: </label>
+            <input class="u-full-width" type="email" placeholder="6" id="age">
+          </div>
+        </div>
+        <div class="row">
+        <div class="twelve columns">
+          <label for="gender">I am a </label>
+          <select class="u-full-width" id="gender">
+            <option value="boy">Boy</option>
+            <option value="girl">Girl</option>
           </select>
         </div>
-      </div>
-      <div class="row">
+        </div>
+        <label for="description">Description</label>
+        <input class="u-full-width" type="email" placeholder="Light brown/white" id="description"></input>
+        <div class="row">
         <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            <label for="dropOffDate">Drop-Off Date and Time: </label>
+            <input class="u-full-width" type="email" placeholder="08/08/2020 6pm" id="dropOffDate">
         </div>
         <div class="six columns">
-          <label for="exampleRecipientInput">I am a </label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Boy</option>
-            <option value="Option 2">Girl</option>
-          </select>
+            <label for="pickUpDate">Pick-Up Date and Time: </label>
+            <input class="u-full-width" type="email" placeholder="09/22/2020 10am" id="pickUpDate">
         </div>
-      </div>
-      <label for="exampleMessage">Other</label>
-      <textarea class="u-full-width" placeholder="Other special things about me" id="exampleMessage"></textarea>
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Send a copy to yourself</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
+        </div>
+        <label for="medical">I am on medication</label>
+        <textarea class="u-full-width" placeholder="Include dosage" id="medical"></textarea>
+        <label for="other">Other</label>
+        <textarea class="u-full-width" placeholder="Other special things about me" id="other"></textarea>
+        <label for="nails">
+        <input type="checkbox" id="nails" value="trimmed" />
+        <span>I want nails trimmed and groomed</span>
+        </label>
+        <div class="row">
+        <div class="six columns">
+            <label for="ownerName">Owner Name: </label>
+            <input class="u-full-width" type="email" placeholder="Ricardo Milos" id="ownerName">
+        </div>
+        <div class="six columns">
+          <label for="ownerEmail">Owner Email</label>
+          <input class="u-full-width" type="email" placeholder="deep@dark.fantacy" id="ownerEmail">
+        </div>
+        </div>
+        <div class="row">
+        <div class="six columns">
+            <label for="exampleRecipientInput">Contact type: </label>
+            <select class="u-full-width" id="exampleRecipientInput">
+                <option value="home">Home</option>
+                <option value="mobile">Mobile</option>
+                <option value="work">Work</option>
+            </select>
+        </div>
+        <div class="six columns">
+          <label for="phone">Phone number: </label>
+          <input class="u-full-width" type="email" placeholder="(666)666-6666)" id="phone">
+        </div>
+        </div>
+        <div class="row">
+        <div class="twelve columns">
+            <label for="streetAddresss">Street Address</label>
+            <input class="u-full-width" type="email" placeholder="Locker Room" id="streetAddresss">
+        </div>
+        </div>
+        <div class="row">
+        <div class="four columns">
+            <label for="city">City</label>
+            <input class="u-full-width" type="email" placeholder="Deep♂" id="city">
+        </div>
+        <div class="four columns">
+            <label for="state">State</label>
+            <input class="u-full-width" type="email" placeholder="Dark♂" id="state">
+        </div>
+        <div class="four columns">
+          <label for="zip">Zip</label>
+          <input class="u-full-width" type="email" placeholder="Fantacy♂" id="zip">
+        </div>
+        </div>
+        <div class="row">
+        <div class="six columns">
+            <label for="vet">Veterinarian: </label>
+            <input class="u-full-width" type="email" placeholder="Van Darkholme" id="vet">
+        </div>
+        <div class="six columns">
+          <label for="vetPhone">Veterinarian Phone: </label>
+          <input class="u-full-width" type="email" placeholder="(233)333-3333" id="vetPhone">
+        </div>
+        </div>
+        <div class="row">
+        <div class="four columns">
+            <label for="emergencyContactName">Emergency Contact Name: </label>
+            <input class="u-full-width" type="email" placeholder="Billy Herrington" id="emergencyContactName">
+        </div>
+        <div class="four columns">
+            <label for="emergencyContactPhone">Emergency Contact Phone: </label>
+            <input class="u-full-width" type="email" placeholder="(233)333-3333" id="emergencyContactPhone">
+        </div>
+        <div class="four columns">
+          <label for="emergencyContactRelationship">Relationship</label>
+          <input class="u-full-width" type="email" placeholder="Friend♂" id="emergencyContactRelationship">
+        </div>
+        </div>
+        <div class="center">
+        <input class="button-primary submit-button" type="submit" value="Submit">
+        </div>
     </form>
-
-      <!-- Standard buttons -->
-    <a class="button" href="#">Anchor button</a>
-    <button>Button element</button>
-    <input type="submit" value="submit input">
-    <input type="button" value="button input">
-
-    <!-- Primary buttons -->
-    <a class="button button-primary" href="#">Anchor button</a>
-    <button class="button-primary">Button element</button>
-    <input class="button-primary" type="submit" value="submit input">
-    <input class="button-primary" type="button" value="button input">
-  </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

@@ -44,3 +44,13 @@
   .container{
     width: 80%;
   }
+  .title {
+    margin-top: 20%;
+    text-align: center;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
